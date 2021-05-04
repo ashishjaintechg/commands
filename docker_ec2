@@ -1,0 +1,41 @@
+yum install docker -y
+
+service docker start
+
+Service docker status
+
+docker version  (show the docker version)
+
+docker image ls    or      docker images  (display the all images)
+
+docker pull httpd    (download image from docker hub)
+
+docker run -it -d --name web1 -p 81:80 httpd  (create container via local image)
+
+docker run -it --name con1  ubuntu /bin/bash   (pull image than create container with con1 name than login)
+
+exit   (logout with container)
+
+docker start con1   (start con1 service)
+
+docker exec -it con1 bash   (login with container  con1 )
+
+docker stop con1   (stop con1)
+
+docker ps    (display only running container)
+
+docker ps -a    (display all container either running or stop)
+
+docker rm con1   (delete the container)
+
+docker image rm ubuntu  (delete the image)
+
+docker commit cont1 ashishjaintechg/image1
+
+docker login
+
+docker push
+
+docker pull 
+
+
