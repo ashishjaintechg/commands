@@ -44,4 +44,82 @@ docker push
 
 docker pull 
 
+docker
+docker images
+services docker status
+docker status
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+docker images
+sudo usermod -aG docker ${USER}
+docker images
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+docker images
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod 666 /var/run/docker.sock
+docker images
+docker pull chrome
+docker login
+docker pull chrome
+docker search java
+docker status
+docker images java8
+docker pull java8
+docker pull openjdk:8
+docker images
+docker run openjdk
+docker container create --name jdk8 openjdk
+docker container create --name jdk8 openjdk:8
+docker ps -a
+docker run jdk8
+docker exec -it jdk8 bash
+docker exec -it b1acac0b06cb bash
+docker start jdk8
+docker exec -it b1acac0b06cb bash
+docker exec -it jdk8 bash
+docker start -d jdk8
+docker -d start jdk8
+docker ps -a
+docker rm b1acac0b06cb
+docker ps -a
+docker run -d openjdk:8
+docker ps -a
+docker run hello-world
+docker images
+docker run -it ubuntu bash
+docker images
+docker run -it ubuntu bash
+docker images
+docker search python
+docker search python3
+docker pull python38
+docker pull python:38
+docker login
+docker pull python:38
+docker pull python:3.8
+docker search python3.8
+docker search python:3.8
+docker images
+docker search mysql
+docker pull mysql:5.7
+docker images
+docker ps -a
+docker ps
+docker images
+docker exec -it openjdk:8 bash
+docker images
+docker run hell-world
+docker run hello-world
+systemctl start docker
+systemctl status docker
+docker
+docker --version
+docker help run
+docker images
+docker run -it openjdk:8:jdk8 bash
+docker run -it openjdk:jdk8 bash
+docker run -it openjdk bash
+docker run -it openjdk:8 bash
+
 
