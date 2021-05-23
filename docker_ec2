@@ -34,6 +34,12 @@ docker commit cont1 ashishjaintechg/image1
 
 docker login
 
+docker run --name test-mysql -v /home/techg/docker/sqldata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=db2admin -p 3306:3306  -d mysql:5.7
+
+mysql -h 127.0.0.1 -P 3306 -u root -p
+
+
+
 docker push
 
 docker pull 
