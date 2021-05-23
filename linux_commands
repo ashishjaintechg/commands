@@ -100,3 +100,15 @@ sudo apt-get install dbeaver-ce
 
 
 keytool -genkey -alias localhost -storetype JKS -keyalg RSA -keysize 2048 -validity 365 -keystore techg.jks
+
+find /etc/ -exec grep netmasks {} \;
+vi /etc/ssh/sshd_config
+permit root yes
+pass authentication yes
+systemctl restart sshd
+su - pawan
+ssh-keygen -t rsa -N " " -f /home/pawan/jenkin
+apt-get install apache2 -y
+/var/www/html
+service apache2 start
+
