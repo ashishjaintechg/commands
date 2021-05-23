@@ -1,0 +1,157 @@
+
+Maven
+convention over configuration
+
+POM
+plugin and goals
+cordinates
+repositories
+
+Standalnone project
+Web Application
+Multi Module
+
+
+Ecliplse
+commandline
+customize
+running and skipping
+adding external dependencies
+parent and child in multi module\
+
+
+maven
+build tool
+ compile
+ run tests
+ packager jar /war
+ deploy to server
+project management toold
+
+basepackage
+ src/main/java
+ src/main/resources
+ src/test/java
+ src/test/resources
+
+
+mvn install
+mvn clean install
+
+dependencies
+
+maven respository - public/private/local
+jar/plugin
+
+Reuse 
+
+Plugin model
+   complier
+   sure fire for test case
+   wsimport - stup from webservice wsdl
+
+
+compile 
+run
+package
+deploy
+
+
+maven archetypes - templates
+
+standalone
+webapp
+ear
+
+IDE
+eclipse/intellij
+
+
+setting file for configuration
+
+.m2 we can save this file
+
+mvn archetype:generate -DgroupId=com.ashish -DartifactId=hellomaven -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
+  before dependencies
+  
+java -cp target/hellomaven-1.0-SNAPSHOT.jar com.ashish.App
+
+
+
+pom - project object model
+
+
+
+URL : which company owns th project, it's optional
+
+cordinates : groupid, artifactid, version,packaging
+
+groupid:artifactid:packaging:version
+com.oracle.subproduct:hellomaven:
+
+hellomaven-1.0-snapshot.jar
+hellomaven-1.0.jar
+
+packaging type which type of build either jar or war
+
+
+default location : http://repo.maven.apache.org/maven2/
+
+enterprice repository mirror to maven cetral with extra jars
+
+local repository it puts  on local
+
+user directory home directory .m2/ repositories junit junit version jar
+
+archetype:test
+archetype:jar
+archetype:project
+
+
+
+created target folder  
+
+java -cp target/.jar com.ashish.Appp
+
+
+
+plugin : collection of 1 or more goals
+
+generate goals
+install goal from goal
+
+pluginid:goalid
+archetype:generate
+
+phases different 
+
+process-resoureces-compile-test-package
+
+process-resources -> resources:resources
+
+usually we have 1 goal
+
+comile compile:compile
+
+test surefire:test
+
+package jar:jar
+
+mvn surefire:test
+
+it will run previous phases as well
+
+
+run time decide war or jar
+
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
+  
+ 
