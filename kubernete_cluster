@@ -60,3 +60,20 @@ Validate your cluster
  kops validate cluster
 To list nodes
 
+------------------
+
+kubectl get nodes
+Deploying Nginx pods on Kubernetes
+Deploying Nginx Container
+
+kubectl run --generator=run-pod/v1 sample-nginx --image=nginx --replicas=2 --port=80
+
+kubectl get pods
+kubectl get deployments
+Expose the deployment as service. This will create an ELB in front of those 2 containers and allow us to publicly access them.
+
+kubectl expose deployment sample-nginx --port=80 --type=LoadBalancer
+# kubectl expose deployment simple-devops-project --port=8080 --type=LoadBalancer
+kubectl get services -o wide
+
+
