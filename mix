@@ -1,0 +1,510 @@
+
+$PWD
+2234234
+234
+apt install gedit
+apt install mysql-client
+apt install software-properties-common
+apt install tesseract-ocr
+./bash
+bash
+cat >test
+cat > test1.txt
+cat >>test1.txt
+cat > test2.txt
+cat >> test2.txt
+cat > test4.txt
+cat > test5.txt
+cat > test6.txt
+cd .
+cd ..
+cd All
+cd ALL
+cd ALL/
+cd allclonezip/
+cd b
+cd bin
+cd centos
+cd centos7
+cd chirag_code/
+cd couponservice/
+cd datadir/
+cd Desktop/
+cd ~/Desktop/ALL/software/
+cd Do
+cd docker
+cd Downloads/
+cd /etc/
+cd hellomaven/
+cd jenkins-data/
+cd mvntry
+cd /opt
+cd /opt/
+cd /opt/gradle/gradle-7.0/bin/
+cd repositories/
+cd /root/
+cd sqldata
+cd sqldata/
+cd ssh
+cd ssh_config.d/
+cd sts-4.10.0.RELEASE/
+cd testing
+chmod 400 aws-key.pem
+chmod +x Dockerfile
+chmod +x gradlew
+./code
+code
+code .
+coe
+df
+dfa\sd]
+df -h
+df -h .
+docker
+docker-compose
+docker-compose up -d
+docker-compose --version
+docker-compose -version
+docker container
+docker container ls
+docker container rm $(docker container ls -aq)
+docker container rm $(docker ls -aq)
+docker container rm test-mysql
+docker container rm test-mysql1
+docker cp convert_to_language.py python_test:/python_ocr_test/
+docker cp EnglishWritingSkills1.pdf python_test:/python_ocr_test/balbodhpathmala1_eng_scn.pdf
+docker cp google_translate.py python_test:/python_ocr_test/
+docker cp ocr_core.py python_test:/python_ocr_test/
+docker cp ocr_core.py python_test:/python_ocr_test/ocr_server/
+docker cp pypdf_test.py python-test:/tmp
+docker cp pypdf_test.py python_test:/tmp
+docker cp python_language.py python_test:/python_ocr_test/
+docker cp python_program.py python_test:/python_ocr_test/
+docker cp ts.pdf python3.8_test:/tmp
+docker exce -it jenkins bash
+docker exce -it web bash
+docker exec it jenkins
+docker exec -it jenkins bash
+docker exec it jenkins bash
+docker exec -it jenkins ssh
+docker exec -it mysql5.7_test bash
+docker exec -it nginx-cont bash
+docker exec -it python3.8_test bash
+docker exec it python3.8_test bash
+docker exec -it some-mysql mysql
+docker exec -it some-mysql mysqladmin -u root password
+docker exec -it some-mysql mysql -uroot -p
+docker exec -it some-mysql mysql -uroot -pmy-secret-pw
+docker exec -it some-mysql mysql -uroot -pmysecret-pw
+docker exec -it sweet_hypatia bash
+docker exec -it test-mysql1 bash
+docker exec -it test-mysql1 mysql -uroot-p
+docker exec -it test-mysql1 mysql -uroot -pmypassword
+docker exec -it test-mysql1 mysql -uroot-pmypassword
+docker exec -it test-mysql1 mysql -uroot -pmypassword -p3306
+docker exec -it test-mysql1 mysql -uroot -pmypassword -P3306
+docker exec -it test-mysql1 mysql -uroot -pmypassword -p6603
+docker exec -it test-mysql1 mysql -uroot-pmypassword -p6603
+docker exec -it ubuntu_jenkin
+docker exec -it ubuntu_jenkin bash
+docker exec -it web bash
+docker exec -it workpress_test bash
+docker exec mysql5.7_test -it bash
+docker help run
+docker history jenkins/jenkins:lts
+docker images
+docker info | grep -i root
+docker inspect jenkins | grep IPAddress
+docker inspect mysql5.7_test
+docker inspect mysql5.7_test | grep IPAddress
+docker inspect nginx-test
+docker inspect nginx-test | grep ipaddress
+docker inspect nginx-test | grep IPAddress
+docker inspect test-mysql
+docker inspect test-mysql | grep "/var/"
+docker inspect test-mysql | grep "Volumes"
+docker inspect test-mysql | more
+docker inspect web
+docker inspect wordpress:latest
+docker inspect wordpress:latest | grep IPAddress
+docker inspect wordpress_test | grep IPAddress
+docker inspect workpress_test
+docker inspect workpress_test | grep IPAddress
+docker logs jenkins
+docker logs mysql5.7_test
+docker logs python3.8_test
+docker man
+docker man run
+docker ps
+docker ps -a
+docker ps -all
+docker ps all
+docker ps ls
+docker pull nginx
+docker rename distracted_austin ubuntu_jenkin
+docker rename python_test python3.8_test
+docker rename web nginx-web
+docker rename workpress_test wordpress_test
+docker restart mysql5.7_test
+docker restart workpress_test
+docker rm mysql5.7_test
+docker rm mysql_test
+docker rm some-mysl
+docker rm some-mysql
+docker rm sweet_hypatia
+docker rm test-mysql
+docker rm test-mysql1
+docker rm workpress_test
+docker run --detach --name=test-mysql1 --env="MYSQL_ROOT_PASSWORD=mypassword" --publish 6603:3306 mysql:5.7 --max-connections=200 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+docker run --detach --name=test-mysql1 --env="MYSQL_ROOT_PASSWORD=mypassword" --publish 6604:3306 mysql:5.7 --max-connections=200 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+docker run --detach --name=test-mysql1 --publish 6603:3306 --volume=/root/container/test-mysql/conf.d:/etc/mysql/conf.d --volume=/storage/docker/mysql-datadir:/var/lib/mysql mysql:5.7
+docker run --detach --name=test-mysql --env="MYSQL_ROOT_PASSWORD=mypassword" --publish 6603:3306 mysql:5.7 --max-connections=200 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+docker run --detach --name=test-mysql --env="MYSQL_ROOT_PASSWORD=mypassword" --publish 6603:3306 mysql --max-connections=200 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+docker run --detach --name=test-mysql --env="MYSQL_ROOT_PASSWORD=mypassword" --publish 6603:3306 --volume=/root/container/mysql5.7_test/conf.d:/etc/mysql/conf.d mysql:5.7
+docker run --detach --name=test-mysql --env="MYSQL_ROOT_PASSWORD=mypassword" --publish 6603:3306 --volume=/root/container/test-mysql/conf.d:/etc/mysql/conf.d --volume=/storage/docker/mysql-datadir:/var/lib/mysql mysql:5.7
+docker run -d jenkins/jenkins
+docker run -d jenkins/jenkins:lts
+docker run -d --name=workpress_test --link mysql5.7_test1:mysql:5.7 wordpress
+docker run -d --name=workpress_test --link mysql5.7_test1:mysql wordpress
+docker run -d --name=workpress_test --link mysql5.7_test:mysql:5.7 wordpress
+docker run -d --name=workpress_test --link mysql5.7_test:mysql wordpress
+docker run -d --name=workpress_test --link mysql5.7_test wordpress
+docker run -d -p 82:80 --name web2 -v $PWD:/usr/share/nginx/html nginx bash
+docker run -d -p 83:80 --name web3 -v $PWD:/usr/share/nginx/html nginx bash
+docker run -d -p --rm -d 83:80 --name web3 -v $PWD:/usr/share/nginx/html nginx bash
+docker run -d --rm -d -p 83:80 --name web3 -v $PWD:/usr/share/nginx/html nginx bash
+docker run -d --rm -d-p 83:80 --name web3 -v $PWD:/usr/share/nginx/html nginx bash
+docker run -it -p 81:80 --name web1 -v $PWD:/usr/share/nginx/html nginx
+docker run -it -p 81:80 --name web1 -v $PWD:/usr/share/nginx/html nginx bash
+docker run -it -p 81:80 --name web -v $PWD:/usr/share/nginx/html nginx
+docker run -it -p 82:80 --name web2 -v $PWD:/usr/share/nginx/html nginx bash
+docker run -it --rm -d -p 80:80 --name web -v $PWD:/usr/share/nginx/html
+docker run -it --rm -d -p 80:80 --name web -v $PWD:/usr/share/nginx/html nginx
+docker run -it --rm -p 80:80 --name web -v $PWD:/usr/share/nginx/html nginx
+docker run --name mysql5.7_test --detach -env MYSQL_ROOT_PASSWORD=db2admin mysql:5.7
+docker run --name mysql5.7_test --detach -env=MYSQL_ROOT_PASSWORD=db2admin mysql:5.7
+docker run --name=mysql5.7_test --detach -env=MYSQL_ROOT_PASSWORD=db2admin mysql:5.7
+docker run --name=mysql5.7_test --env="MYSQL_ROOT_PASSWORD=db2admin" --detach mysql:5.7
+docker run --name=mysql5.7_test -env="MYSQL_ROOT_PASSWORD=db2admin" --detach mysql:5.7
+docker run --name=mysql5.7_test -env=MYSQL_ROOT_PASSWORD=db2admin --detach mysql:5.7
+docker run --name=mysql5.7_test --env="MYSQL_ROOT_PASSWORD=db2admin" --publish 3306:3306 --detach mysql:5.7
+docker run --name=mysql_test -d mysql
+docker run --name=mysql_test -d mysql:5.7
+docker run --name nginx-cont -p 80:80 nginx
+docker run --name nginx-cont -p 80:80 nginx -v /temp:/temp
+docker run --name nginx-cont -p 80:80 nginx -v /tmp:/tmp
+docker run --name nginx-test -p 80:80 nginx
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5.7
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5.7
+docker run --name test-mysql -v /home/techg/docker/sqldata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=db2admin -d mysql
+docker run --name test-mysql -v /home/techg/docker/sqldata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=db2admin -d mysql:5.7
+docker run --name test-mysql -v /home/techg/docker/sqldata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=db2admin -d mysql:5.7 -p 3306:3306
+docker run --name test-mysql -v /home/techg/docker/sqldata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=db2admin -p 3306:3306 -d mysql:5.7
+docker run nginx-cont -p 80:80 nginx
+docker run ubuntu
+docker start jenkins
+docker start mysql5.7_test
+docker start nginx-cont
+docker start nginx-test
+docker start python3.8_test
+docker start ubuntu
+docker start ubuntu_jenkin
+docker start web
+docker start wordpress_test
+docker start workpress_test
+docker status
+docker stop mysql5.7_test
+docker stop mysql_test
+docker stop nginx-test
+docker stop nginx-web
+docker stop some-mysql
+docker stop sweet_hypatia
+docker stop test-mysql
+docker stop web
+docker stop wordpress_test
+docker stop workpress_test
+dpkg -l *team* | grep ii
+echo $JAVA_HOME
+echo $PWD
+exec: -v: not found
+exi
+exit
+find / -name "tesseract" 2>/dev/null
+free
+git
+git add *
+git branch
+git branch -a
+git branch test
+git checkout master
+git checkout test
+git clonce git@github.com:ashishjaintechg/git.git
+git clone git@github.com:ashishjaintechg/git.git
+git clone https://github.com/ashishjaintechg/couponservice.git
+git clone https://github.com/yankils/Simple-DevOps-Project.git
+git commit -m "6 file added"
+git commit -m "added 4 th file"
+git commit -m "permission given"
+git commit -m "permission given to DockerFile"
+git commit -m "testing diff"
+git commit -m "trying another file"
+git commit -m "trying another file another"
+git commit -m "trying another file another 1"
+git commit -m "trying first file"
+git commit -m "tst 5 added"
+git config --global user.email "ashishjaintechg"
+git config --global user.email "ashishjaintechg@gmail.com"
+git config --global user.name "ASHISH JAIN"
+git config --list
+git diff ebcc42a72540ff2bdc5c3941834691f58d48243f
+git diff test1.txt
+git init
+git init testing
+git --list
+git list
+git log
+git log --oneline
+git ls-files
+git merge test
+git pull git@github.com:ashishjaintechg/chirag_code.git
+git pull https://github.com/ashishjaintechg/chirag_code.git
+git pull https://github.com/ashishjaintechg/couponservice.git
+git pull https://github.com/yankils/Simple-DevOps-Project.git
+git push git@github.com:ashishjaintechg/couponservice.git master
+git push https://github.com/ashishjaintechg/chirag_code.git
+git push https://github.com/ashishjaintechg/couponservice.git
+git push origin master
+git remote add origin git@github.com:ashishjaintechg/couponservice.git
+git remote add origin https://github.com/ashishjaintechg/chirag_code.git
+git remote rem origin
+git remote remove origin
+git reset --hard HEAD~1
+git reset --mixed HEAD~1
+git reset --soft HEAD~1
+git rm --cached test2.txt
+git stash
+git stash pop
+git statu
+git status
+git -v
+git --version
+git -version
+gradle
+./gradle -v
+gradle -v
+grep -ir "anuj" .
+grep -ir "@ControllerAdvice" . --include \*.java
+grep -ir "docker" --include *.txt
+grep -ir "docker" -include *.txt
+grep -ir "docker" . -include *.txt
+grep -ir docker -include *.txt
+grep -ir "exec" --include *.txt
+grep -ir "gradle" --include *.txt
+grep -ir "gupshup" .
+grep -ir "gupshup" . --include *.php
+grep -ir "JOIN FETCH" . --include \*.java
+grep -ir "JOIN" . --include \*.java
+grep -ir "@ModelAttribute . --include \*.java
+grep -ir repositories . --include *.gradle
+grep -ir "@RequestAttribute" . --include \*.java
+grep -ir "RequestAttribute" . --include \*.java
+grep -ir "shanti" .
+grep -ir "spring-boot-starter-cache" . --include *.gradle
+grep -ir "test" .
+history
+id
+ip a
+ip a | grep docker
+ip a | grep docker | grep inet
+java
+java -cp target/hellomaven-1.0-SNAPSHOT.jar com.ashish.App
+java -v
+java --version
+java -version
+ll
+ll -a
+ll -h
+ll -s
+ls
+ls -a
+ls Al
+ls -F
+ls --format=single-column
+ls icon.xpm
+ls jenkins_home/
+ls -l
+ls -lart
+ls -lrt
+ls ~/.m2/
+ls /opt/gradle/gradle-7.0/
+ls /opt/sts-4.10.0.RELEASE/icon.xpm
+ls /opt/sts-4.10.0.RELEASE/SpringToolSuite4
+ls profile
+ls *.zip
+man docker run
+man docker-run
+maven
+./medl
+./meld
+mkdir allzip
+mkdir centos7
+mkdir chirag_code
+mkdir datadir
+mkdir docker
+mkdir jenkins
+mkdir jenkins_home
+mkdir mvntry
+mkdir /opt/gradle
+mkdir -p /root/container/mysql5.7_test/conf.d
+mkdir repositories
+mkdir sqldata
+more docker-compose.yml
+more /etc/hosts
+more index.html
+more profile
+more ssh_config
+mv datadir sqldata
+mv jenkins jenkins-data
+mvn
+mvn archetype:generate -DgroupId=com.ashish -DartifactId=hellomaven - DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.ashish -DartifactId=hellomaven -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn install
+mvn --version
+mv *.php ./php/
+mv pypdf_test pypdf_test.py
+mv spring-tool-suite-4-4.10.0.RELEASE-e4.19.0-linux.gtk.x86_64.tar.gz ~/Desktop/ALL/software/
+mv unzipcommand.sh ../allzip/
+mv *.zip ../allzip/
+mysql
+mysql -h 127.0.0.1 -P 3306
+mysql -h 127.0.0.1 -P 3306 -p
+mysql -h 127.0.0.1 -P 3306 -u root
+mysql -h 127.0.0.1 -P 3306 -u root -p
+mysql -h localhost -P 3306 -u root -p
+mysql -h localost -P 3306 -u root -p
+mysql -uroot -p
+mysql -u root -p db2admin
+mysql -u root -pdb2admin
+mysql -uroot -pmypassword -h127.0.0.1 -P6603
+mysql -uroot -pmypassword -h127.0.0.1 -P6603 -e 'show global variables like "max_connections"';
+netstat
+pip3 install easyocr
+pip3 install google_trans_new
+pip3 install pdf2image
+pip3 install PyPDF2
+pip3 install pytesseract
+pip3 install pyttsx3
+pip install pdf2image
+ps -a
+pwd
+pytesseract
+python
+python3
+python3 googletranslate.py
+python3 imagetotext.py
+python3 pdftoaudio.py
+python3 pdftoimage.py
+rm *
+rm -d hello/
+rm -d sqldata
+rm hello/
+rm -r *
+rm -R *
+rm -R .
+rm -R allclonezip
+rm -r chirag_code
+rm -R chirag_code/
+rm -rf sqldata
+rm -R sqldata
+rm test
+rm zoomcodes.txt
+./s
+;s
+s
+sdfsadf
+sh
+source /etc/profile
+source /etc/profile/
+ssh -i "aws-key.pem" ubuntu@ec2-3-80-193-211.compute-1.amazonaws.com
+ssh -i "aws-key.pem" ubuntu@ec2-3-85-233-146.compute-1.amazonaws.com
+ssh -i "aws-key.pem" ubuntu@ec2-3-86-211-79.compute-1.amazonaws.com
+ssh jenkins@jenkins.local
+status
+sudo
+sudo apt-get remove skype skype-bin:i386 skype:i386
+Sudo apt-get remove skype skype-bin:i386 skype:i386
+sudo apt install code_1.55.1-1617808414_amd64.deb
+sudo apt install gedit
+sudo apt install gotomeeting
+sudo apt install libtesseract-dev
+sudo apt install mysql-clien
+sudo apt install mysql-client
+sudo apt install net-tools
+sudo apt install python3-pip
+sudo apt install ./teamviewer_amd64.deb
+sudo apt install tesseract-ocr
+sudo apt purge teams
+sudo apt search gotomeeting
+sudo chmod +x /usr/local/bin/docker-compose
+sudo chown 1000:1000 jenkin_home -R
+sudo chown 1000:1000 jenkins_home -R
+sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo deb -i code_1.55.1-1617808414_amd64.deb
+sudo dmidecode -t 16
+sudo dmidecode -t 17
+sudo dpkg -i code_1.26.0-1534177765_amd64.deb
+sudo dpkg -i code_1.55.1-1617808414_amd64.deb
+sudo dpkg -i teams_1.3.00.16851_amd64.deb
+sudo du -sh /var/lib/docker
+sudo gedit
+sudo gedit /etc/profile
+sudo gedit profile
+sudo gedit /usr/share/applications/stsLauncher.desktop
+sudo ln -s /opt/sts-4.10.0.RELEASE/SpringToolSuite4 /usr/local/bin/sts
+sudo lshw -class memory
+sudo mkdir /opt/gradle
+sudo mkdir -p /root/container/mysql5.7_test/conf.d
+sudo mv spring-tool-suite-3.9.10.RELEASE-e4.13.0-linux-gtk-x86_64.tar.gz /opt
+sudo mv spring-tool-suite-4-4.10.0.RELEASE-e
+sudo mv spring-tool-suite-4-4.10.0.RELEASE-e4.19.0-linux.gtk.x86_64.tar.gz ~/Desktop/ALL/software/
+sudo mv spring-tool-suite-4-4.10.0.RELEASE-e4.19.0-linux.gtk.x86_64.tar.gz /opt/
+sudo rm -d sqldata/
+sudo rm -R allclonezip
+sudo rm -r chirag_code
+sudo rm -rf sqldata/
+sudo /root/
+sudo service mysql start
+sudo snap install skype --classic
+sudo source /etc/profile
+sudo su -
+sudo tar -xvf spring-tool-suite-3.7.0.RELEASE-e4.5-linux-gtk-x86_64.tar.gz
+sudo tar zxvf spring-tool-suite-4-4.10.0.RELEASE-e4.19.0-linux.gtk.x86_64.tar.gz
+sudo unzip -d /opt/gradle gradle-7.0-bin.zip
+sudo vi /etc/hosts
+telnet localhost 3306
+telnet localhost 33060
+tesseract
+touch a.txt
+uname -a
+uname -m
+uname -s
+uname -S
+./unzipcommand.sh
+unzip -d /opt/gradle gradle-7.0-bin.zip
+unzip mch-collections-contract.zip
+vi ~/.bashrc
+vi docker-compose.yml
+vi Dockerfile
+vi googletranslate.py
+vi imagetotext.py
+vi pdftoaudio.py
+vi pdftoimage.py
+vi pom.xml
+vi ssh_config.d/
+vi test
+[wd
+wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.16851_amd64.deb
+which pytesseract
+which tesseract
