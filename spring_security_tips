@@ -10,3 +10,16 @@ AuthenticationFailureHandler
 
 spring authentication filter
 
+basis authentication
+form based
+oauth single sign on
+
+custom login own authentication
+
+https confidentiality basic auth
+jwt  signatures integrity
+  prevent another website submiting data on your bahalf
+cors origin request sharing will allow different domain to communicate each other, cors allow two different domain application to communicate with each other
+
+servlet filter authentication class 
+if not authentication manager 
