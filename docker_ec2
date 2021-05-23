@@ -122,4 +122,39 @@ docker run -it openjdk:jdk8 bash
 docker run -it openjdk bash
 docker run -it openjdk:8 bash
 
+sudo groupadd docker
+
+sudo usermod -ag docker ${USER}
+ls /var/run/docker.sock
+docker
+docker --version
+docker images
+docker search 
+docker pull
+docker pull jenkins/jenkins:lts
+docker run -it openjdk:8 bash
+systemctl start docker
+docker login
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod 666 /var/run/docker.sock
+docker pull openjdk:8
+docker container create --name jdk8 openjdk:8
+docker ps -a
+docker start jdk8
+docker stop jdk8
+docker rm jdk8
+docker run -d openjdk:8
+docker run hello-world
+docker run -it ubuntu bash
+docker run -it ubuntu bash
+docker search python:3.8
+docker pull mysql:5.7
+docker exec -it openjdk:8 bash
+docker run hello-world
+systemctl start docker
+systemctl status docker
+docker help create
+docker run -it openjdk:8 bash
+docker history jenkins/jenkins:lts
+docker exec -it [container-name] -u root bash
 
