@@ -158,3 +158,21 @@ docker run -it openjdk:8 bash
 docker history jenkins/jenkins:lts
 docker exec -it [container-name] -u root bash
 
+docker volume ls
+docker volume create myvolume
+docker volume prune (will remove unused)
+docker volume inspect myvolume
+docker run -td --name ashish -p 80:80 ubuntu
+docker port ashish
+docker exec -it ashish /bin/bash
+docker run -td --name jenkin1 -p 8080:8080 jenkins
+docker run -it --name cont1 myvolumimage /bin/bash
+Dockerfile
+docker build -t docker-image .
+docker run -it --name cont2 --previledged =true --volume-from cont1 ubuntu /bin/bash
+docker attach cont1
+docker run -it --name cont3 -v /myvolume ubuntu /bin/bash
+docker run -it --name ec2con -v /home/ec2-user:/itest --previledged=true ubuntu /bin/bash
+
+
+
