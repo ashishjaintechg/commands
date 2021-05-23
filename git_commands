@@ -1,0 +1,419 @@
+				GIT COMMANDS
+
+1. Check the version, or git installation confirmation by following command
+	git --version
+
+
+2. Git Local prerequisites
+
+Make a directory
+	mkdir <directory name>
+
+Initialising a git directory	
+	git init
+
+or combine above two commands
+	git init <directory name>
+
+Listing configuration settings whether user.name and user.email have been set already or not
+	git config --list
+
+Setting name configuration globally
+	git config --global user.name "ASHISH JAIN"
+
+Setting email configuration globally
+	git config --global user.email "ASHISHJAINTECH@GMAIL.COM" 
+
+Setting color parameter
+	git config --global color.ui "auto"
+
+Setting editor for ubuntu os
+	git config --global core.editor Vim
+
+Setting editor for windows
+	git config --global core.editor "'c:\<path>\notepad.exe'"
+
+Listing system configuration settings whether user.name and user.email have been set already or not
+	git config --system --list
+
+
+3. Same system connecting multiple accounts. 
+
+Following command will ask user and password every time
+	git config --local credential.helper ""
+	git push origin master
+
+
+4. Resetting to previous before commit
+
+Reset staged file to untracked
+	git reset HEAD <fileName>
+	git reset <fileName>
+
+Reset all to untracked
+	git reset
+
+Reset tracked to same as committed
+	git checkout <filename>
+
+Reset/remove untracked
+	git clean -f
+
+
+5. Resetting to previous after commit on local repository
+
+Move committed files in last commit to stage and move the pointer
+	git reset --soft HEAD~1
+
+Move committed files in last commit to unstaged and move the pointer
+	git reset --mixed HEAD~1 or git reset HEAD~1
+
+Remove committed files in last commit and move the pointer
+	git reset --hard HEAD~1
+
+
+6. Log commands
+
+Will display Author, Date, Commit id & message
+	git log
+
+Will display in one line only Commit id & message
+	git log --oneline
+
+Will display in graph format
+	git log --oneline --decorate --graph
+
+Will display for a particular branch
+	git log branchname --oneline --decorate --graph
+
+Will display file names with commit 
+	git log --stat
+
+
+7. Remove file
+
+From staging and put it in untracked
+	git rm --cached <file name>
+
+For removing from untracked
+	rm filename
+
+Or from both stage as well as working directory
+	git rm <file name>
+
+
+8. List files
+
+In working directory
+	git ls-files
+
+In staging
+	git ls-files --stage
+
+
+9. Difference
+
+In working directory and staging
+	git diff 
+	git diff commitid
+	git diff HEAD~1
+
+In staging and Head
+	git diff --staged 
+	git diff --staged commitid
+	git diff --staged HEAD~1
+
+gitk gui tool
+	gitk
+
+Branch difference
+	git diff branch1..branch2
+
+
+10. Revert file and commit
+
+This will put the file in stage
+	git checkout commitid filename
+	git checkout HEAD~1 filename	
+
+
+11. Restoring the changes
+
+Staging
+	git restored --staged filename
+
+Working 
+	git restored filename	
+ 
+
+12. Ignoring the .txt file pattern by gitignore file
+
+Create gitignore file
+	touch .gitignore
+
+Add files patter to ignore
+	echo "*.txt" >> .gitignore
+
+Add and commit the file 
+	git add .gitignore
+	git commit -m "gitignore file committed"
+
+Ignoring gitignore pattern
+	git add -f abc.txt
+
+
+13. Renaming files
+
+By git mv
+	git mv oldfile newfile
+	git commit -m "msg"
+
+By linux rm
+	mv oldfile newfile
+	git rm oldfile
+	git add newfile
+	git commit -m "file renamed"
+
+
+14. Branching
+
+Showing current branches
+	git branch
+
+Showing all branches
+	git branch -a
+
+Create a branch
+	git branch <branch name>
+
+Going in to a branch
+	git checkout <branch name>
+
+Change branch as previous
+	git checkout -
+
+Creating and going into a branch directly
+	git checkout -b branchname
+
+Deleting a branch
+	git branch -d branchname
+
+15. Creating a repository locally and push with https
+
+Git local repository
+	git init dirname
+
+Create a file and commit
+	touch a.txt
+	git add a.txt
+	git commit -m "a file added"
+
+Git Hub repository
+	create remote repository on git hub - get the http url
+
+Create a symbolic link
+	git remote add origin https:<path>
+
+Check remote branch fetch and push permission
+	git remote -v
+
+Pushing remote
+	git push origin master
+
+If you don't want to use origin master again then first time do
+	git push -u origin master
+
+Then in further commits
+	git push 	
+
+
+
+16.  Creating a repository locally and push with ssh key
+
+Adding key to remote for getting access
+Simple Key generation process for adding our id_rsa.pub key in gerrit setting in ssh add key section 
+	ssh-keygen
+	
+hit enter many times, it will generate file id_rsa.pub and give you the path of id_rsa.pub
+just copy the content in id_rsa.pub file and add in settings in git hub
+
+With ssh-keygen process git@<>.git
+user will not be prompted for giving username and password.
+
+
+17 Taking clone from remote	
+
+Cloning branch from remote by https
+	git clone https://github.com/ashishjaintech/git.git
+	git add *
+	git commit -m
+	git may ask you to set config or user.name or user.email while committing if not set already
+	git push -u origin master or gerrit command git push origin HEAD:refs/for/<branch name>
+	git may ask you to enter user name and password on website open dialog
+
+or ssh - 
+	git clone git@github.com:ashishjaintech/git.git
+	git add *
+	git commit -m
+	set the ssh-keygen .pub content in gerrit or git hub before pushing
+	git push -u origin master or gerrit command git push origin HEAD:refs/for/<branch name>
+
+or folder
+	git clone existinggitfolder newgitfolder
+	In this active repository of existinggitfolder will be default repository
+ 
+
+18 Commiting files to remote or intermediatory repository
+
+For checking any change in repository
+	git status
+	
+Adding all files after change
+	git add *
+
+Or
+ 	git add .
+	
+Adding only particular file
+	git add <particular file path with complete name and extension> this you can get by running git status command
+	
+Adding only java file
+	git add *.java
+
+Committing added files with comment
+	git commit -m "Git start with initial commands"
+
+Then same process, we can also add and commit with single command if file has been updated only
+	git commit -am "Added more commands"
+
+If there is an intermidiate verification process integrated like gerrit for review then pushing commited files
+	git push origin HEAD:refs/for/<branch name>
+
+Or pusing committed files to remote directly if gerrit is not there, it will ask credentials
+	git push
+
+
+19 Checkout
+
+Git new branch creation and checkout to new branch
+	git checkout <existingbranch> <newbranchname> 
+
+Git checkout clears current changes in file and make it in sync with remote version
+	git checkout gradle.properties
+
+Git checkout clears all changes made in current local branch and sync it with remote version
+	git checkout .
+
+
+20. Merge branch
+
+First go to the destination branch you want to merge to 
+	git checkout destbranchname
+
+Here branchname is the source of the branch
+	git merge sourcebranchname 
+
+
+21. Stash commands
+
+Save in stash
+	git stash save "msg"
+
+Show stash list
+	git stash list
+
+File changed in last stash
+	git stash show
+
+View the content of the most recent stash
+	git stash show -p
+
+View the content of an arbitrary stash
+	git stash show -p stash@{1}
+
+Clearing the stash
+	git stash clear
+
+Apply/use the stash content without pop
+	git stash apply
+
+Pop the stash content and use
+	git stash pop	
+
+22. Git rebase master
+
+If our code is dependendent on additional master commits
+	git rebase master
+Master commit will be added in branch before all commits as a base
+
+
+23. Before running push command local files should be in sync with remote branch, 
+
+First we should save our changes in stash
+	git stash
+
+For sync with remote branch
+	git pull --rebase
+
+For getting the previous saved code from stash 
+	git stash pop
+
+You may have some conflict after stash pop command, resolve conflict manually 
+then do 
+Adding all files after change
+	git add *
+
+Committing added files with comment
+	git commit -m "Git start with initial commands"
+
+If there is an intermidiate verification process integrated like gerrit for review then pushing commited files
+	git push origin HEAD:refs/for/<branch name>
+
+Or pusing committed files to remote directly if gerrit is not there, it will ask credentials
+	git push
+
+
+24. How to cherry-pick one commit from one branch to another branch and push to remote
+
+It will show you the commits, take the commit id you want to cherry-pick in another branch
+	git log 
+
+checkout in another branch where you want to cherry-pick.
+	git checkout <branch name>
+
+run cherry-pick command with commit id
+	git cherry-pick <commitid>
+
+it is possible you cherry-pick may create conflich in code, then solve conflict manually and add files
+	git add *
+
+then instead of adding commit with a message run following, this command should only run when there is conflict
+	git cherry-pick --continue
+	
+If there is an intermidiate verification process integrated like gerrit for review then pushing commited files
+	git push origin HEAD:refs/for/<branch name>
+
+Or pusing committed files to remote directly if gerrit is not there, it will ask credentials
+	git push	
+
+
+25. Ammend the your last commit after pushing code to gerrit 
+or 
+If something needs to be changed in review
+
+Put the current changes in files to stash
+	git stash 
+	
+Make the required changes in the files
+
+Adding all files after change
+	git add *
+	
+Take the change id of you commit from gerrit
+
+Amending with change id in commit command, it will open a new window where you can put copied gerrit change id in 
+second blank line or ignore if change id is there already during multiple amends
+	git commit --amend 
+
+Pushing commited files and ask for review again
+	git push origin HEAD:refs/for/<branch name>	
