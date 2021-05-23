@@ -1,0 +1,102 @@
+sudo apt update
+sudo apt upgrade
+/etc/passwd
+/opt
+/usr/bin/
+uname -a
+
+sudo gedit /etc/profile
+Setting path
+
+JAVA_HOME=/home/techg/Desktop/ALL/software/java/jdk-11
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+export JAVA_HOME
+export JRE_HOME
+export PATH
+
+
+vi ~/.bashrc
+
+export JAVA_HOME=/home/techg/Desktop/ALL/software/java/jdk-11
+export PATH=${PATH}:${JAVA_HOME}/bin
+
+vi ~/.bashrc
+
+export M2_HOME=/home/techg/Desktop/ALL/software/apache-maven-3.8.1
+export PATH=${PATH}:${M2_HOME}/bin
+
+mkdir /opt/gradle
+unzip -d /opt/gradle gradle-7.0-bin.zip
+ls /opt/gradle/gradle-7.0
+
+vi ~/.bashrc
+
+export GRADLE_HOME=/opt/gradle/gradle-7.0
+export PATH=${PATH}:${GRADLE_HOME}/bin
+
+
+
+
+
+source /etc/environment
+ls --format=single-column
+sudo rm -R allclonezip
+
+
+RUN useradd remote_user && echo "1234" | passwd remote_user --stdin && mkdir /home/remote_user && mkdir /home/remote_user/.ssh && chmod 700 /home/remote_user/.ssh
+
+docker rm -fv 
+
+ 
+
+
+sudo dpkg -i code_1.26.0-1534177765_amd64.deb
+
+free
+
+unzip "*.zip"
+unzip -d /opt/gradle gradle-7.0-bin.zip
+code .
+sudo gedit /etc/profile
+mvn archetype:generate -DgroupId=com.ashish -DartifactId=hellomaven -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn install
+tar -xvzf
+
+tesseract out.jpg out -l deu+eng
+dd if=/media/techg/ESD-USB of=/media/techg/RITU
+ip a 
+ll
+ls
+[Desktop Entry]
+Name=Spring Tool Suite
+Comment=Spring Tool Suite 4.10.0
+Exec=/opt/sts-4.10.0.RELEASE/SpringToolSuite4
+Icon=/opt/sts-4.10.0.RELEASE/icon.xpm
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Development;IDE;Java;
+
+
+
+
+/var/lib/jenkins/workspace
+
+find / -name "workspace" 2>/dev/null
+
+sudo usermod -a -G root jenkins
+
+sudo service jenkins restart
+
+chown 1000:1000 -R .
+
+/var/jenkins_home/workspace
+
+
+sudo add-apt-repository ppa:serge-rider/dbeaver-ce
+sudo apt-get update
+sudo apt-get install dbeaver-ce
+
+
+
+keytool -genkey -alias localhost -storetype JKS -keyalg RSA -keysize 2048 -validity 365 -keystore techg.jks
