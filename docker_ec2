@@ -38,11 +38,13 @@ docker run --name test-mysql -v /home/techg/docker/sqldata:/var/lib/mysql -e MYS
 
 mysql -h 127.0.0.1 -P 3306 -u root -p
 
+docker pull openzipkin/zipkin
 
 
 docker push
 
 docker pull 
+docker run --name test_zipkin -d -p 9411:9411 openzipkin/zipkin
 
 docker
 docker images
