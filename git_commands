@@ -417,3 +417,11 @@ second blank line or ignore if change id is there already during multiple amends
 
 Pushing commited files and ask for review again
 	git push origin HEAD:refs/for/<branch name>	
+
+git reset --hard HEAD~1
+git push --force origin master
+
+ssh-keygen -C "email" -t rsa
+ssh-keygen -C "email" -t rsa -b 4096 -f /path/filename
+
+ssh -i privatefile root@ip
