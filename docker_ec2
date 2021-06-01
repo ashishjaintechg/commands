@@ -37,6 +37,15 @@ docker login
 docker run --name test-mysql -v /home/techg/docker/sqldata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=db2admin -p 3306:3306  -d mysql:5.7
 
 mysql -h 127.0.0.1 -P 3306 -u root -p
+db2admin
+
+docker container run -d  -p 8080:8080  -v /home/techg/docker/jenkindata:/var/jenkins_home  --name test-jenkins  jenkins/jenkins:lts
+admin/admin
+
+mkdir nexusdata && sudo chown -R 200 nexusdata
+docker run -d -p 8081:8081 --name test-nexus -v /home/techg/docker/nexusdata:/nexus-data sonatype/docker-nexus3
+admin/admin123
+
 
 docker pull openzipkin/zipkin
 
