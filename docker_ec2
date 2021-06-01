@@ -46,6 +46,7 @@ mkdir nexusdata && sudo chown -R 200 nexusdata
 docker run -d -p 8081:8081 --name test-nexus -v /home/techg/docker/nexusdata:/nexus-data sonatype/docker-nexus3
 admin/admin123
 
+docker run -d -p 8080:8080 -p 29418:29418 -e AUTH_TYPE='DEVELOPMENT_BECOME_ANY_ACCOUNT' --name test-gerrit -v /home/techg/docker/gerritfile/git:/var/gerrit/git -v /home/techg/docker/gerritfile/git-etc:/var/gerrit/etc -v /home/techg/docker/gerritfile/db-volume:/var/gerrit/db  -v /home/techg/docker/gerritfile/index-volume:/var/gerrit/index -v /home/techg/docker/gerritfile/cache-volume:/var/gerrit/cache gerritcodereview/gerrit
 
 docker pull openzipkin/zipkin
 
