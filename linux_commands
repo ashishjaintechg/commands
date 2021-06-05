@@ -112,3 +112,21 @@ apt-get install apache2 -y
 /var/www/html
 service apache2 start
 
+
+
+yum install java-1.8.0-openjdk
+
+alternatives --config java
+
+yum install mysql-server
+
+chkconfig mysqld on
+
+service mysqld start
+
+mysqladmin -u root password test1234
+
+mysql -uroot -p
+
+
+sudo -i
